@@ -15,7 +15,7 @@ public class Main {
                 if (operation == '+' || operation == '-' || operation == '*' || operation == '/') {
                     break;
                 } else {
-                    closeErrorOperand();
+                    System.out.println("Error: Invalid operand. Try again.");
                 } 
             }
 
@@ -36,10 +36,6 @@ public class Main {
             }
         }
         scanner.close(); 
-    }
-
-    private static void closeErrorOperand() {
-        System.out.println("Error: Invalid operand. Try again.");
     }
 
     private static double performOperation(double operand1, char operation, double operand2) {
